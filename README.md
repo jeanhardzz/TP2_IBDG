@@ -66,5 +66,3 @@ Ao analisar a quantidade de dados válidos em cada estação por coluna, observo
 | estacao      | object        | 10                  | 10                     |
 | latitude     | float64       | 10                  | 10                     |
 | longitude    | float64       | 10                  | 10                     |
-
-Este relatório proporciona uma visão abrangente do processo de construção do Banco de Dados Geográfico (BDG), as fontes de dados utilizadas, metadados coletados e as visualizações produzidas para análise meteorológica nas bacias do Rio das Velhas.
