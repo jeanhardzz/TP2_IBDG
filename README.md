@@ -53,16 +53,42 @@ Ao analisar a quantidade de dados válidos em cada estação por coluna, observo
 | valorMedida    | object         | 389                 | 591                    |
 | id_estacao_fk  | int64          | 10                  | 591                    |
 
-
 **weather_stations:**
 - **id_estacao:** Representa o id da estação meteorológica.
 - **estacao:** Representa o nome da estação meteorológica.
 - **latitude:** Representa a coordenada geográfica de latitude.
 - **longitude:** Representa a coordenada geográfica de longitude.
+- **max_pluv:** Representa maior valor das precipitações medidas.
+- **min_pluv:** Representa menor valor das precipitações medidas.
+- **media_anual_pluv:** Representa a média anual das precipitações medidas.
+- **media_prec_pluv:** Representa a média no período de precipitação.
+- **media_est_pluv:** Representa a média no período de estiagem das precipitações.
+- **desvio_pluv:** Representa o desvio padrão medidas das precipitações.
 
-| Coluna       | Tipo de Dados | Qtd. Valores Únicos | Qtd. Total de Valores |
-|--------------|---------------|---------------------|------------------------|
-| id_estacao   | int64         | 10                  | 10                     |
-| estacao      | object        | 10                  | 10                     |
-| latitude     | float64       | 10                  | 10                     |
-| longitude    | float64       | 10                  | 10                     |
+| Coluna           | Descrição                                       | Tipo de Dados | Qtd. Valores Únicos | Qtd. Total de Valores |
+|------------------|-------------------------------------------------|---------------|---------------------|------------------------|
+| id_estacao       | Representa o id da estação meteorologica.       | int64         | 11                  | 11                     |
+| estacao          | Representa o nome da estação meteorologica.     | object        | 11                  | 11                     |
+| latitude         | Representa a coordenada geográfica de latitude. | float64       | 11                  | 11                     |
+| longitude        | Representa a coordenada geográfica de longitude.| float64       | 11                  | 11                     |
+| max_pluv         | Representa maior valor das precipitações medidas.| float64       | 11                  | 11                     |
+| min_pluv         | Representa menor valor das precipitações medidas.| float64       | 3                   | 11                     |
+| media_anual_pluv | Representa a média anual das precipitações medidas.| float64      | 11                  | 11                     |
+| media_prec_pluv  | Representa a média no periodo de precipitação.  | float64       | 11                  | 11                     |
+| media_est_pluv   | Representa a média no periodo de estiagem das precipitações.| float64 | 11             | 11                     |
+| desvio_pluv      | Representa o desvio padrão medidas das precipitações.| float64   | 11             | 11                     |
+
+
+| id_estacao | estacao        | max_pluv | min_pluv | media_anual_pluv | media_prec_pluv | media_est_pluv | desvio_pluv | latitude  | longitude  |
+|------------|----------------|----------|----------|-------------------|-----------------|----------------|-------------|-----------|------------|
+| 0          | BH-PAMPULHA    | 739.80   | 0.4      | 137.122034        | 248.026667      | 137.122034     | 151.615634  | -19.883889| -43.969444 |
+| 1          | DIAMANTINA     | 581.80   | 0.2      | 117.330769        | 201.244103      | 117.330769     | 125.371783  | -18.231052| -43.648269 |
+| 2          | CURVELO        | 416.00   | 0.2      | 100.011765        | 169.667843      | 100.011765     | 109.552999  | -18.747711| -44.453785 |
+| 3          | PIRAPORA       | 402.20   | 0.8      | 90.321429         | 166.694762      | 90.321429      | 99.766287   | -17.258064| -44.835556 |
+| 4          | SETE-LAGOAS    | 595.00   | 0.2      | 128.788000        | 219.225067      | 128.788000     | 135.960550  | -19.455278| -44.173333 |
+| 5          | BH-CERCADINHO  | 966.60   | 0.4      | 153.077966        | 278.822599      | 153.077966     | 184.182695  | -19.980000| -43.958611 |
+| 6          | JABOTICATUBAS   | 413.00   | 0.2      | 103.910345        | 200.728571      | 103.910345     | 123.492102  | -19.517010| -43.745180 |
+| 7          | RIO-ACIMA       | 611.80   | 0.2      | 114.048276        | 207.985714      | 114.048276     | 136.660806  | -20.087600| -43.785103 |
+| 8          | SANTA-LUZIA     | 519.00   | 0.2      | 116.341379        | 221.935714      | 116.341379     | 137.860117  | -19.766250| -43.835350 |
+| 9          | VESPASIANO      | 483.40   | 0.2      | 82.028070         | 150.429630      | 82.028070      | 107.884352  | -19.758210| -43.953920 |
+| 10         | OURO-PRETO      | 491.17   | 0.2      | 132.348667        | 236.517667      | 132.348667     | 134.676622  | -20.396000| -43.502000 |
